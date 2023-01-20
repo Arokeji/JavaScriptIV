@@ -1,11 +1,11 @@
 let screen = document.querySelector('.calculator__result');
 screen.innerText = '0';
-let buttonsOperand = document.querySelectorAll('.button');
+let buttons = document.querySelectorAll('.button');
 let calculations = '';
 
 
 //Escucha de botones
-for (let button of buttonsOperand) {
+for (let button of buttons) {
     button.addEventListener('click', function() {
         let buttonPressed = button.getAttribute('value');
 
